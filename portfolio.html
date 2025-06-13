@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <div class="profile-pic">
+                <img src="jeune.jpg" alt="Ma photo de profil">
+            </div>
+
+            <h1>Bonjour, je suis <span class='highlight'>Max Ngoie </span></h1>
+            <p>Développeur Web / Designer / Business man</p>
+            <a href="#projets" class="btn">Voir mes projets</a>
+        </div>
+    </section>
+
+    <section id="projets" class="projects">
+        <h2>Mes Projets</h2>
+        <div class="project-grid">
+            <!-- Les projets seront ajoutés dynamiquement avec JavaScript -->
+        </div>
+    </section>
+
+    <section id="competences" class="skills">
+        <h2>Mes Compétences</h2><br><br>
+        <div class="skills-container">
+            <ol>
+            <li> Compétences en front-end</li><br>
+                <ul>
+                    <li>Maîtrise des langages : HTML, CSS, JavaScript</li>
+
+                    <li>Utilisation des frameworks et bibliothèques : React, Angular, Vue.js</li>
+
+                    <li>Expérience avec les préprocesseurs CSS : Sass, Less</li>
+
+                    <li>Connaissance des outils de gestion de versions : Git, GitHub, GitLab</li>
+
+                    <li>Responsive design et accessibilité web</li><br>
+</ul>
+            <li> Compétences en back-end</li><br>
+                <ul>
+                    <li>Langages de programmation : Node.js, Python, PHP, Ruby, Java</li>
+
+                    <li>Frameworks backend : Express.js, Django, Laravel, Spring Boot</li>
+
+                    <li>Gestion et optimisation des bases de données : SQL (MySQL, PostgreSQL), NoSQL (MongoDB)</li>
+
+                    <li>API REST et GraphQL</li><br>
+</ul>
+            <li> Compétences DevOps et autres</li><br>
+                <ul>
+                    <li>Gestion des serveurs et hébergement cloud : AWS, Google Cloud, Azure</li>
+
+                    <li>Conteneurisation et orchestration : Docker, Kubernetes</li>
+
+                    <li>Sécurité et bonnes pratiques de développement</li>
+
+                    <li>Tests et débogage : Jest, Mocha, Selenium</li>
+
+                    <li>Expérience en gestion de projet : Méthodes Agile, Scrum</li>
+</ul>
+</ol>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contactez-moi</h2>
+
+        <p>Vous avez un projet en tête ou souhaitez discuter d'une opportunité ? Je serais ravi d'échanger avec vous. Remplissez le formulaire ou contactez-moi directement par l'un des moyens ci-dessous.</p>
+            
+        <div class="contact-details">
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                    <h3>Email</h3>
+                    <a href="mailto:jentrepreneur6@gmail.com">jentrepreneur6@gmail.com</a>
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-text">
+                    <h3>Téléphone</h3>
+                    <a href="tel:+243853187814">+243 85 318 78 14</a>
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                    <h3>Localisation</h3>
+                    <span>Lubumbashi, DRC</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact-form">
+        <h3>Envoyez un message</h3>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-control" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Envoyer le message</button>
+        </form>
+    </div>
+</div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mon Portfolio. A n'est pas reproduire. </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
